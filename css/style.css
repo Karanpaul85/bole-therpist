@@ -42,7 +42,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 99999;
 }
 .header-phone {
   background: var(--light-blue);
@@ -463,6 +463,29 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.thankYoupage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+.thankYoupage > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 0.7rem;
+}
+.thankYoupage > div h1 {
+  width: 100%;
+  text-align: center;
+}
+.thankYoupage > div h1::after {
+  display: none;
 }
 @media (max-width: 768px) {
   .header-phone {

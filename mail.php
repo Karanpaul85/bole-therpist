@@ -5,7 +5,6 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $service =$_POST['service'];
-$url= $_SERVER['HTTP_REFERER'];
 $subject = "Nikhil Bole";
 
 
@@ -31,7 +30,7 @@ $headers[] = 'bcc: karanpaul85@gmail.com';
 
 if(mail($to, $subject, $message, implode("\r\n", $headers)))
 {
-    header('location:'. $url .'#mailSuccess');
+   header('location: thankyou.html');
 }
 else
 {
